@@ -101,15 +101,21 @@ Conferência automática: cada lançamento do lote foi comparado com o extrato (
 | Inter | 27/04/2026 | 40,32 | 739,32 | 699,00 | 3 transferências antigas (abaixo) |
 | Cora | movimento 01/01 a 21/07/2026 | -3.882,78 | -7.786,28 | -3.903,50 | Itens pendentes (abaixo) |
 
-### Pendências que dependem do usuário
-1. **Inter, R$ 699,00**: o extrato do Inter mostra saídas, mas no Omie as transferências que já existem (e estão conciliadas) saem de outra conta:
-   - 28/08/2023, 20,00, Pix "Cp :19540550" (ASAAS): o Omie registra Cora → ASAAS (cód. 5201941158).
-   - 16/11/2023, 500,00 e 179,00, Pix "Cp :37880206" (Cora): o Omie registra ASAAS → Cora (cód. 5202118316 e 5202118580).
+### Pendências resolvidas em 07/10/2026 (autorizadas pelo usuário)
+1. **Inter, R$ 699,00**: a conta de origem das 3 transferências foi trocada para o Banco Inter:
+   - 5201941157: 28/08/2023, 20,00, agora Inter → ASAAS.
+   - 5202118313: 16/11/2023, 500,00, agora Inter → Cora.
+   - 5202118579: 16/11/2023, 179,00, agora Inter → Cora.
 
-   Sugestão: trocar a conta de origem dessas três transferências para o Banco Inter. Assim o Inter fecha em 40,32. Não foi feito sem autorização porque são lançamentos já conciliados.
+   **O Inter fecha em 40,32 em 27/04/2026, igual ao banco.**
 2. **Cora 2026**:
-   - 17 recebimentos "previstos" (12.627,00) têm valor igual no banco, mas o pagador é diferente do cliente. É preciso confirmar antes de baixar.
-   - 1 pagamento de 125,00 (banco: Ministério da Fazenda; Omie: Associação Comercial do Pará).
-   - 15 lançamentos do Omie sem movimento no banco (8.598,50), sendo 9 de Marques Drinks.
-3. **Cora antes de 2026** (saldo de abertura): continua dependendo dos extratos da Cora de 2022–2025.
-4. **Marcar como conciliado** na tela *Finanças › Conciliação Bancária*, porque a API não tem essa operação.
+   - 14 recebimentos previstos foram baixados na Cora, com conciliação, na data do extrato.
+   - Os títulos 5230641282, 5234256261 e 5232383152 não existiam mais no Omie. Por isso os 3 recebimentos foram lançados direto na conta, com os códigos CBC20260330MG531, CBC20260406NORTE531 e CBC20260505MF597.
+   - O pagamento de 125,00 da Associação Comercial do Pará (título 5201935224) foi baixado em 10/02/2026.
+   - Movimento de 2026 no Omie = movimento do banco (-3.882,78) + 8.598,50. Os 8.598,50 são os 15 lançamentos do Omie sem movimento no banco.
+3. **Extrato Inter em CNAB 240 (.RET) de 01/01/2025 a 27/04/2026**, enviado pelo usuário: os 34 movimentos já estavam no extrato PDF usado e estão lançados. O saldo inicial é 41,62 e o final é 40,32, os dois iguais ao Omie.
+
+### Pendências que continuam
+1. Cora: 15 lançamentos do Omie sem movimento no banco (8.598,50). Nove são de Marques Drinks e estão "não conciliados". Os outros 6 estão marcados como conciliados, mas não aparecem no extrato.
+2. Saldo de abertura da Cora: depende dos extratos da Cora de 2022–2025.
+3. Marcar como conciliado, na tela *Finanças › Conciliação Bancária*, os lançamentos incluídos pela API.
