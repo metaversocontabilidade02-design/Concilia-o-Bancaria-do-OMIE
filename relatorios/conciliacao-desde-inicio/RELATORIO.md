@@ -128,7 +128,7 @@ Conferência automática: cada lançamento do lote foi comparado com o extrato (
 | 2023 | 407 / 356,67 | 3.385,25 | -25.729,61 | 117 movimentos do banco faltam no Omie (+15.300,15); 24 previstos a baixar (13.374,00) |
 | 2024 | 624 / -1.626,39 | 1.758,86 | -131.483,29 | 189 movimentos do banco faltam no Omie (+97.285,29); 14 previstos a baixar (7.742,00) |
 
-Se o plano `plano_cora_2023_2024_para_aprovar.xlsx` for aplicado, o Omie fecha 2024 em 1.758,86, igual ao banco. Conta feita: -131.483,29 + 112.585,44 de inclusões + 21.116,00 de baixas + 440,71 - 900,00 de lançamentos sem banco.
+Se o plano `relatorios/conciliacao-desde-inicio/plano_cora_2023_2024_para_aprovar.xlsx` (local, fora do git) for aplicado, o Omie fecha 2024 em 1.758,86, igual ao banco. Conta feita: -131.483,29 + 112.585,44 de inclusões + 21.116,00 de baixas + 440,71 - 900,00 de lançamentos sem banco.
 
 O plano aguarda aprovação. Dos 38 previstos, 27 têm o valor igual ao do banco, mas um pagador diferente do cliente do título.
 
