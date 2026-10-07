@@ -119,3 +119,17 @@ Conferência automática: cada lançamento do lote foi comparado com o extrato (
 1. Cora: 15 lançamentos do Omie sem movimento no banco (8.598,50). Nove são de Marques Drinks e estão "não conciliados". Os outros 6 estão marcados como conciliados, mas não aparecem no extrato.
 2. Saldo de abertura da Cora: depende dos extratos da Cora de 2022–2025.
 3. Marcar como conciliado, na tela *Finanças › Conciliação Bancária*, os lançamentos incluídos pela API.
+
+## Cora 2022–2024 (extratos enviados pelo usuário em 07/10/2026)
+
+| Ano | Banco: movimentos / soma | Saldo banco 31/12 | Saldo Omie 31/12 | Situação |
+|---|---|---:|---:|---|
+| 2022 | 148 / 3.028,58 (conta aberta em 23/06/2022) | 3.028,58 | 3.028,58 | **Fechado** |
+| 2023 | 407 / 356,67 | 3.385,25 | -25.729,61 | 117 movimentos do banco faltam no Omie (+15.300,15); 24 previstos a baixar (13.374,00) |
+| 2024 | 624 / -1.626,39 | 1.758,86 | -131.483,29 | 189 movimentos do banco faltam no Omie (+97.285,29); 14 previstos a baixar (7.742,00) |
+
+Se o plano `plano_cora_2023_2024_para_aprovar.xlsx` for aplicado, o Omie fecha 2024 em 1.758,86, igual ao banco. Conta feita: -131.483,29 + 112.585,44 de inclusões + 21.116,00 de baixas + 440,71 - 900,00 de lançamentos sem banco.
+
+O plano aguarda aprovação. Dos 38 previstos, 27 têm o valor igual ao do banco, mas um pagador diferente do cliente do título.
+
+A única transferência criada hoje que não aparece no extrato da Cora é a de 1.550,00 Cora → Inter em 02/03/2023. A origem provável é a ASAAS. Ainda falta o extrato da Cora de 2025.
