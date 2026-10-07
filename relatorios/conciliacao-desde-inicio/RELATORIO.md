@@ -2,7 +2,7 @@
 
 Data: 07/10/2026 · Empresa Omie: `metaverso-uuswexa` · CNPJ 39.332.252/0001-53
 Extratos usados: Google Drive › DEPARTAMENTO FINANCEIRO › EXTRATOS METAVERSO CONTABILIDADE.
-Nenhum dado do Omie foi alterado nesta etapa.
+Na primeira etapa (diagnóstico) nenhum dado foi alterado; as correções e inclusões autorizadas estão nas seções finais.
 
 Planilha detalhada, linha a linha (fica só localmente, fora do git): `conciliacao_metaverso_desde_inicio.xlsx`.
 Scripts que reproduzem o cruzamento: `scripts/`.
@@ -71,3 +71,45 @@ Conferência após as correções: o ASAAS fecha 2025 com saldo 8.522,92 no Omie
 O arquivo `INTER_faltantes_2025.ofx` foi regerado sem essas 4 entradas (133 movimentos).
 
 Períodos contábeis desbloqueados pelo usuário em 07/10/2026; a importação dos OFX do Inter 2021–2024 está liberada.
+
+## Lote de inclusões executado em 07/10/2026 (aprovado pelo usuário)
+
+Plano aprovado: `plano_lancamentos_para_aprovar.xlsx`, com as categorias ajustadas pelo usuário. Todos os lançamentos levam `cCodIntLanc` com prefixo `CBI`/`CBT` e a observação "conc. API". Isso evita duplicidade e permite localizá-los depois.
+
+| Grupo | Qtde | Resultado |
+|---|---:|---|
+| Movimentos do banco que faltavam (Inter 2021–2026 e Cora 2026) | 1.052 | 1.052 OK |
+| CDB Inter: aplicações (2.07.99) e resgates (1.02.02) | 63 | 63 OK |
+| Transferências entre contas próprias (Inter/Cora/ASAAS) | 46 | 46 OK |
+| Recebimentos da Cora convertidos em transferência Inter → Cora (5036375309, 5036375231, 5201823805) | 3 | Alterados |
+| Aplicações "Inter Corporate FIRF CP" de 18/08/2023 e 14/11/2023, que entraram como receita | 2 | Corrigidas para 2.07.99 (saída) |
+
+Decisões do usuário aplicadas:
+- Pix de Luana que voltaram para a empresa → 1.03.26 (devolução).
+- Aplicações → 2.07.99.
+- Calima 187,34 → 2.04.99.
+- Fatura do cartão → 2.01.99.
+
+Conferência automática: cada lançamento do lote foi comparado com o extrato (conta, data, valor e sinal). Não sobrou nenhuma divergência.
+
+## Saldos após o lote
+
+| Conta | Data | Banco | Omie | Diferença | Explicação |
+|---|---|---:|---:|---:|---|
+| Inter | 28/12/2021 | 147,44 | 147,44 | 0,00 | Fechado |
+| Inter | 20/12/2022 | 268,01 | 268,01 | 0,00 | Fechado |
+| Inter | 27/04/2026 | 40,32 | 739,32 | 699,00 | 3 transferências antigas (abaixo) |
+| Cora | movimento 01/01 a 21/07/2026 | -3.882,78 | -7.786,28 | -3.903,50 | Itens pendentes (abaixo) |
+
+### Pendências que dependem do usuário
+1. **Inter, R$ 699,00**: o extrato do Inter mostra saídas, mas no Omie as transferências que já existem (e estão conciliadas) saem de outra conta:
+   - 28/08/2023, 20,00, Pix "Cp :19540550" (ASAAS): o Omie registra Cora → ASAAS (cód. 5201941158).
+   - 16/11/2023, 500,00 e 179,00, Pix "Cp :37880206" (Cora): o Omie registra ASAAS → Cora (cód. 5202118316 e 5202118580).
+
+   Sugestão: trocar a conta de origem dessas três transferências para o Banco Inter. Assim o Inter fecha em 40,32. Não foi feito sem autorização porque são lançamentos já conciliados.
+2. **Cora 2026**:
+   - 17 recebimentos "previstos" (12.627,00) têm valor igual no banco, mas o pagador é diferente do cliente. É preciso confirmar antes de baixar.
+   - 1 pagamento de 125,00 (banco: Ministério da Fazenda; Omie: Associação Comercial do Pará).
+   - 15 lançamentos do Omie sem movimento no banco (8.598,50), sendo 9 de Marques Drinks.
+3. **Cora antes de 2026** (saldo de abertura): continua dependendo dos extratos da Cora de 2022–2025.
+4. **Marcar como conciliado** na tela *Finanças › Conciliação Bancária*, porque a API não tem essa operação.
