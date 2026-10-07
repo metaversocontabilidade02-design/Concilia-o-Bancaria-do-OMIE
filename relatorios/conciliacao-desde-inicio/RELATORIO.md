@@ -51,3 +51,22 @@ A API do Omie não tem operação para conciliar nem para importar OFX. A marca�
 3. **Cora**: baixar os 29 previstos confirmados e lançar os 487 movimentos faltantes, de preferência importando o OFX de 2026 que está no Drive.
 4. **Enviar ao Drive** os extratos da Cora de 2022–2025 e do ASAAS de 2022–2024 e 2026, para fechar as diferenças de abertura.
 5. ASAAS: identificar e estornar os R$ 7.390,00 não conciliados anteriores a 2025.
+
+## Correções executadas no Omie em 07/10/2026 (autorizadas)
+
+| Conta | Data | Valor | Cód. lançamento | Ação | Resultado |
+|---|---|---:|---|---|---|
+| ASAAS | 11/08/2025 | -457,00 | 5202076157 | Destino da transferência Cora → **Banco Inter** | OK |
+| ASAAS | 14/08/2025 | -750,00 | 5202076577 | Destino Cora → **Banco Inter** | OK |
+| ASAAS | 01/10/2025 | -230,00 | 5202078842 | Destino Cora → **Banco Inter** | OK |
+| ASAAS | 15/12/2025 | -528,71 | 5202089098 | Destino Cora → **Banco Inter** | OK |
+| ASAAS | 07/08/2025 | +1,99 | 5202075539 | Excluído (tarifa lançada como receita; o -1,99 correto já existia) | OK |
+| ASAAS | 10/09/2025 | +1,99 | 5202077653 | Excluído (idem) | OK |
+| ASAAS | 10/09/2025 | +0,99 | 5202077710 | Excluído (idem) | OK |
+| Inter | 26/09/2022 | +150,00 | 5234938505 | Excluir (CDB com sinal trocado) | **Bloqueado**: período contábil set/2022 fechado no Painel do Contador |
+| Inter | 28/08/2024 | -80,00 | 5027039646 | Excluir (transferência inexistente) | **Bloqueado**: período contábil ago/2024 fechado no Painel do Contador |
+
+Conferência após as correções: o ASAAS fecha 2025 com saldo 8.522,92 no Omie (movimento do ano = -135,14, igual ao banco); o Inter recebeu os +1.965,71 das transferências corrigidas.
+O arquivo `INTER_faltantes_2025.ofx` foi regerado sem essas 4 entradas (133 movimentos).
+
+**Atenção para a importação dos OFX**: os períodos até pelo menos ago/2024 estão bloqueados no Painel do Contador. A importação dos extratos do Inter de 2021 a 2024 também vai ser recusada até que esses meses sejam desbloqueados.
