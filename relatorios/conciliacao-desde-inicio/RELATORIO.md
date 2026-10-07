@@ -63,10 +63,11 @@ A API do Omie não tem operação para conciliar nem para importar OFX. A marca�
 | ASAAS | 07/08/2025 | +1,99 | 5202075539 | Excluído (tarifa lançada como receita; o -1,99 correto já existia) | OK |
 | ASAAS | 10/09/2025 | +1,99 | 5202077653 | Excluído (idem) | OK |
 | ASAAS | 10/09/2025 | +0,99 | 5202077710 | Excluído (idem) | OK |
-| Inter | 26/09/2022 | +150,00 | 5234938505 | Excluir (CDB com sinal trocado) | **Bloqueado**: período contábil set/2022 fechado no Painel do Contador |
-| Inter | 28/08/2024 | -80,00 | 5027039646 | Excluir (transferência inexistente) | **Bloqueado**: período contábil ago/2024 fechado no Painel do Contador |
+| Inter | 26/09/2022 | +150,00 | 5234938505 | Excluído (CDB com sinal trocado; o -150 correto vem no OFX do Inter 2022) | OK (após desbloqueio do período) |
+| Inter | 28/08/2024 | -80,00 | 5027039646 | Excluída (transferência inexistente no Inter) | OK (após desbloqueio do período) |
+| Cora | 28/08/2024 | +80,00 | 5305452044 | Incluído: devolução de Pix recebida (categoria 1.03.26), que antes vinha embutida na transferência excluída | OK, falta marcar conciliado na tela |
 
-Conferência após as correções: o ASAAS fecha 2025 com saldo 8.522,92 no Omie (movimento do ano = -135,14, igual ao banco); o Inter recebeu os +1.965,71 das transferências corrigidas.
+Conferência após as correções: o ASAAS fecha 2025 com saldo 8.522,92 no Omie (movimento do ano = -135,14, igual ao banco); o Inter recebeu os +1.965,71 das transferências corrigidas e, após as duas exclusões, fecha 2025 em 12.211,34; o saldo da Cora em 29/08/2024 ficou inalterado (-63.402,26).
 O arquivo `INTER_faltantes_2025.ofx` foi regerado sem essas 4 entradas (133 movimentos).
 
-**Atenção para a importação dos OFX**: os períodos até pelo menos ago/2024 estão bloqueados no Painel do Contador. A importação dos extratos do Inter de 2021 a 2024 também vai ser recusada até que esses meses sejam desbloqueados.
+Períodos contábeis desbloqueados pelo usuário em 07/10/2026; a importação dos OFX do Inter 2021–2024 está liberada.
