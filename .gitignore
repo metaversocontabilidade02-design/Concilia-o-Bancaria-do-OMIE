@@ -1,0 +1,3 @@
+# Dados bancários e planilhas com movimentação detalhada não vão para o git
+relatorios/**/*.xlsx
+relatorios/**/*.csv
