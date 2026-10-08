@@ -170,3 +170,9 @@ Não há outra diferença. Os itens restantes dependem de decisão do usuário (
 | 31/12/2024 | 1.758,86 | 1.758,86 |
 
 **Cora fechada de 2022 a 2024.** O ano de 2025 depende do extrato da Cora de 2025.
+- **Correção em 08/10/2026 (informação do usuário):** os 900,00 pagos pela Icon cobrem dois títulos de 450, um da RDS e um da ICON. Por isso:
+  - os títulos 5025248180 (RDS) e 5025248131 (ICON) foram baixados de novo em 24/07/2024 (baixas 5305911064 e 5305911190);
+  - foi excluído o lançamento CBCcb66d615b479dedbc, um recebimento de 900,00 que duplicava esse pagamento.
+
+  O saldo não mudou.
+- Ainda há títulos RDS/ICON de 2024 em aberto (abril, maio e junho), com títulos duplicados em maio e junho. Os 900,00 recebidos da BELCON ENGENHARIA em 16/04, 23/05 e 20/06/2024 entraram como recebimentos avulsos. Isso aguarda a confirmação do usuário.
