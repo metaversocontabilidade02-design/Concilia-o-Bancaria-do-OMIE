@@ -176,3 +176,14 @@ Não há outra diferença. Os itens restantes dependem de decisão do usuário (
 
   O saldo não mudou.
 - Ainda há títulos RDS/ICON de 2024 em aberto (abril, maio e junho), com títulos duplicados em maio e junho. Os 900,00 recebidos da BELCON ENGENHARIA em 16/04, 23/05 e 20/06/2024 entraram como recebimentos avulsos. Isso aguarda a confirmação do usuário.
+- **BELCON = pagador da RDS + ICON (informação do usuário).** Os títulos de 2024 foram baixados de dois em dois (450 da RDS + 450 da ICON) pelos 900,00 recebidos da BELCON:
+  - 16/04/2024: títulos 5025248150 e 5025248124;
+  - 23/05/2024: títulos 5025248175 e 5025248127;
+  - 20/06/2024: títulos 5025248177 e 5025248129.
+
+  Os recebimentos avulsos que duplicavam esses pagamentos foram excluídos (CBCb6b9b306f7ae392ef, CBC5cb658e8d79b913ca e CBC21361ae51dd16c1b8). A Cora continua fechando em 1.758,86 em 31/12/2024.
+- Ainda estão abertos 4 títulos gerados por OS para maio e junho de 2024, em duplicidade com os títulos acima:
+  - RDS: 4968324447 e 4968324550;
+  - ICON: 4968324685 e 4968324641.
+
+  Aguardam a decisão do usuário: excluir ou manter.
