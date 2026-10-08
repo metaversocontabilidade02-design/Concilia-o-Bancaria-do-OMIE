@@ -133,3 +133,16 @@ Se o plano `relatorios/conciliacao-desde-inicio/plano_cora_2023_2024_para_aprova
 O plano aguarda aprovação. Dos 38 previstos, 27 têm o valor igual ao do banco, mas um pagador diferente do cliente do título.
 
 A única transferência criada hoje que não aparece no extrato da Cora é a de 1.550,00 Cora → Inter em 02/03/2023. A origem provável é a ASAAS. Ainda falta o extrato da Cora de 2025.
+
+### Cora 2023–2024: plano aplicado em 07–08/10/2026 (aprovado pelo usuário)
+- 306 lançamentos incluídos (códigos `CBC…`), com as categorias da planilha aprovada.
+- 35 previstos baixados com conciliação.
+- 3 títulos já não existiam (5029831256, 5029834877 e 5029834109). Os recebimentos foram lançados direto na conta: CBC20241129NOSSA706, CBC20241212EVELYN600 e CBC20241223ANTON600.
+
+| Data | Banco | Omie | Diferença | Explicação |
+|---|---:|---:|---:|---|
+| 31/12/2022 | 3.028,58 | 3.028,58 | 0,00 | Fechado |
+| 31/12/2023 | 3.385,25 | 2.944,54 | -440,71 | Transferência de 1.550,00 em 02/03/2023 que não passou pela Cora (-1.550,00), mais Intertech 670,53 e Playtech 438,76, que não estão no extrato |
+| 31/12/2024 | 1.758,86 | 2.218,15 | +459,29 | A diferença de 2023 (-440,71), mais RDS 450 e ICON 450 de 24/07/2024, que não estão no extrato |
+
+Não há outra diferença. Os itens restantes dependem de decisão do usuário (aba "Questões").
