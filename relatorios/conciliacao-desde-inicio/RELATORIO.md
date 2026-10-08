@@ -146,3 +146,27 @@ A única transferência criada hoje que não aparece no extrato da Cora é a de 
 | 31/12/2024 | 1.758,86 | 2.218,15 | +459,29 | A diferença de 2023 (-440,71), mais RDS 450 e ICON 450 de 24/07/2024, que não estão no extrato |
 
 Não há outra diferença. Os itens restantes dependem de decisão do usuário (aba "Questões").
+
+### Cora 2022–2024: questões resolvidas em 08/10/2026 (aprovado pelo usuário)
+- Transferência CBTa0476295fa9f73e22 (1.550,00 em 02/03/2023): origem trocada de Cora para ASAAS. O destino continua sendo o Inter.
+- Incluídos dois lançamentos em 26/09/2022: CBC20220926MARIANA (+125, categoria 1.01.03) e CBC20220926JUCEB (-125, categoria 2.04.99).
+- Excluídas as transferências ASAAS ↔ Cora sem movimento no extrato:
+  - 15/03/2022, 120,00 (5201936821 e 5201936826);
+  - 14/06/2023, 90,00 (5201938174 e 5201938177).
+
+  Os dois lados foram removidos. Na ASAAS o efeito é zero.
+- Recebimentos cancelados (baixa desfeita), porque não estão no extrato:
+  - Intertech, 670,53 (baixa 4872283922);
+  - Playtech, 438,76 (baixa 4872321843);
+  - RDS, 450 (baixa 5027218826);
+  - ICON, 450 (baixa 5027218830).
+
+  **Os títulos voltaram para "em aberto"**: 4872275652, 4872314771, 5025248180 e 5025248131.
+
+| Data | Banco | Omie |
+|---|---:|---:|
+| 31/12/2022 | 3.028,58 | 3.028,58 |
+| 31/12/2023 | 3.385,25 | 3.385,25 |
+| 31/12/2024 | 1.758,86 | 1.758,86 |
+
+**Cora fechada de 2022 a 2024.** O ano de 2025 depende do extrato da Cora de 2025.
