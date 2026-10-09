@@ -209,3 +209,44 @@ Não há outra diferença. Os itens restantes dependem de decisão do usuário (
   - 2 recebimentos de contrato em out/2026 (Alcateia e Rodrigo).
   - 2 transferências: 1.530,00 ASAAS→Inter em 14/09 e 900,00 ASAAS→Cora em 09/10.
 - **Diferença de abertura:** o Omie mostra 7.651,92 em 31/12/2025 e o banco mostra 0,00. Como o movimento de 2025 já bate, a diferença é anterior a 2025. Para resolver, é preciso o extrato da ASAAS de 2022–2024 ou um ajuste de saldo.
+
+## Execução do plano aprovado (09/10/2026)
+Planilha devolvida pelo usuário com as categorias corrigidas:
+- **Lançamentos feitos no Omie:**
+  - 204 inclusões (Cora, Inter e ASAAS), todas OK;
+  - 26 baixas de título;
+  - 8 transferências entre contas;
+  - o RPS 69 do Rodrigo saiu da Cora e foi baixado de novo na ASAAS.
+- **Categorias informadas pelo usuário:**
+  - Estagiário 2.03.98;
+  - Retirada de sócio 2.03.96, que vale para a Luana a partir daqui;
+  - Multa 2.05.02;
+  - Salário 2.03.01;
+  - Rescisão 2.03.04;
+  - Comissão 2.02.01;
+  - Devolução ao cliente 2.09.02;
+  - Serviços PF 2.04.93 e PJ 2.04.92;
+  - Empréstimos 2.05.99;
+  - Lanche 2.03.12.
+- **Pix do Antônio (2.000,00 em 10/09):** quitou os RPS 81 (Ant. Costa Barão), 92 (Super 20tão), 105 (Moama) e 101 (O Vintão).
+- **Baixas que o Omie recusou** (o título foi emitido como cobrança Cora, então a integração faz a baixa sozinha):
+  - Ministério 75;
+  - Popperl 531;
+  - FLX 922,49 e 3.279,99;
+  - O Vintão RPS 101, 438: este não vai baixar sozinho, porque foi pago por Pix avulso.
+- **Conferência de saldos em 09/10/2026:**
+  - **Cora:** o movimento de set–out no Omie bate com o banco, considerando os itens pendentes listados acima e abaixo (7.382,69). A diferença de abertura de 30.659,47 em 31/08 vem do período 22/07–31/08, que ainda não tem extrato.
+  - **Inter:** o Omie mostra 896,70 e o banco 137,66. A diferença de 759,04 é a soma de:
+    - 5 lançamentos duplicados de 2022: +215,93;
+    - 3 lançamentos de 08/10 que não estão no banco: +179,67;
+    - Pix à S N ainda não lançado: +363,44.
+  - **ASAAS:** o Omie mostra 6.748,30 e o banco 93,38. A diferença de 6.654,92 é a soma de:
+    - saldo antigo anterior a 2025: 7.651,92;
+    - menos os recebimentos de outubro ainda não lançados (Alcateia 500 e Rodrigo 497): −997.
+- **Ainda pendente com o usuário:**
+  - Marques 1.062 (09/09): quais títulos baixar;
+  - E. Ferreira 543,21 (19/09);
+  - Pix de 363,44 para a S N (25/09);
+  - recebimentos de contrato de outubro sem nota (Norte Gestão, Alcateia e Rodrigo);
+  - exclusões no Inter;
+  - saldo antigo da ASAAS.
