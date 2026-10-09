@@ -193,4 +193,19 @@ Não há outra diferença. Os itens restantes dependem de decisão do usuário (
 - **Inter**: 46 movimentos de 28/04 a 09/10/2026. O saldo em 09/10 é 137,66 (bate com o extrato). Faltam 33 lançamentos e há 7 transferências entre contas.
 - **Inter, diferença nova de +215,93**: 5 lançamentos de abr–mai/2022 foram criados em duplicidade em 07/10, às 18:57, pela importação de extrato na tela do Omie. Sugestão: excluir.
 - O plano está em `plano_set_out_2026_cora_inter.xlsx` (local, fora do git) e aguarda aprovação.
-- Ainda faltam o extrato da Cora de 22/07 a 31/08/2026 e o da ASAAS de 2026.
+- Ainda falta o extrato da Cora de 22/07 a 31/08/2026.
+
+## ASAAS 2026 (01/01 a 09/10/2026)
+- O extrato tem 138 movimentos e soma +93,38 (o saldo vai de 0,00 a 93,38).
+- No Omie há 35 lançamentos realizados, e **todos casam com o banco**.
+- **Falta lançar** (abas `ASAAS *` de `plano_set_out_2026_cora_inter.xlsx`):
+  - 88 inclusões:
+    - 74 tarifas, que somam -189,81;
+    - recebimentos: Ortoclínica (244,96 e 240,00), Rodrigo (mar e abr) e Janaina (cartão, 5 × 373,11);
+    - pagamentos: Pix à Luana (2 × 100), SEFA (114,19), Vivo (219,89) e um boleto de 90,00 sem identificação.
+  - 3 títulos do Rodrigo:
+    - recibos 38 e 47, que estão na conta Cora e foram pagos na ASAAS;
+    - RPS 69, baixado na Cora quando o dinheiro entrou na ASAAS.
+  - 2 recebimentos de contrato em out/2026 (Alcateia e Rodrigo).
+  - 2 transferências: 1.530,00 ASAAS→Inter em 14/09 e 900,00 ASAAS→Cora em 09/10.
+- **Diferença de abertura:** o Omie mostra 7.651,92 em 31/12/2025 e o banco mostra 0,00. Como o movimento de 2025 já bate, a diferença é anterior a 2025. Para resolver, é preciso o extrato da ASAAS de 2022–2024 ou um ajuste de saldo.
