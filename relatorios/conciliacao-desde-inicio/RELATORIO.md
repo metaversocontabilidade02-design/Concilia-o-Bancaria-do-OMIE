@@ -187,3 +187,10 @@ Não há outra diferença. Os itens restantes dependem de decisão do usuário (
   - ICON: 4968324685 e 4968324641.
 
   Aguardam a decisão do usuário: excluir ou manter.
+
+## Conciliação atual (09/10/2026): Cora set–out e Inter mai–out
+- **Cora**: 117 movimentos de 01/09 a 09/10/2026. O saldo do banco em 09/10 é 2.668,72 (bate com o OFX). Faltam 89 lançamentos no Omie, há 18 previstos a baixar e 6 transferências entre contas.
+- **Inter**: 46 movimentos de 28/04 a 09/10/2026. O saldo em 09/10 é 137,66 (bate com o extrato). Faltam 33 lançamentos e há 7 transferências entre contas.
+- **Inter, diferença nova de +215,93**: 5 lançamentos de abr–mai/2022 foram criados em duplicidade em 07/10, às 18:57, pela importação de extrato na tela do Omie. Sugestão: excluir.
+- O plano está em `plano_set_out_2026_cora_inter.xlsx` (local, fora do git) e aguarda aprovação.
+- Ainda faltam o extrato da Cora de 22/07 a 31/08/2026 e o da ASAAS de 2026.
