@@ -250,3 +250,4 @@ Planilha devolvida pelo usuário com as categorias corrigidas:
   - recebimentos de contrato de outubro sem nota (Norte Gestão, Alcateia e Rodrigo);
   - exclusões no Inter;
   - saldo antigo da ASAAS.
+- 09/10: o Pix de 363,44 para a S N (25/09, Inter) foi lançado em 2.04.06 Material de Escritório/Limpeza (lançamento 5306684963), conforme informado pelo usuário. Com isso, a diferença que sobra no Inter é 395,60 (os 5 duplicados mais os 3 itens de 08/10).
